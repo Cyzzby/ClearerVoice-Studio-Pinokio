@@ -28,7 +28,10 @@ module.exports = {
           "pip install wheel",
           "pip install -r requirements.txt",
           "pip install streamlit", // use streamlit run UI app
-          "python demo.py" // download pretrained models to checkpoint folder
+          "huggingface-cli download --repo-type space alibabasglab/ClearVoice --include checkpoints/* --local-dir ."
+          "huggingface-cli download --repo-type space alibabasglab/ClearVoice --include models/* --local-dir ."
+          
+          
         ],
       }
     },
