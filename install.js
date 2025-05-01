@@ -4,7 +4,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/modelscope/ClearerVoice-Studio.git app"
+          "git clone https://github.com/newgenai79/ClearerVoice-Studio app"
         ],
       }
     },
@@ -25,6 +25,7 @@ module.exports = {
         path: "app",
         message: [
           "pip install -U pip",
+          "pip install wheel",
           "pip install -r requirements.txt",
           "pip install streamlit", // use streamlit run UI app
           "python demo.py" // download pretrained models to checkpoint folder
