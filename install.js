@@ -24,7 +24,7 @@ module.exports = {
         venv: "env",              
         path: "app",
         message: [
-          "pip install -U pip",
+          "python -m pip install -U pip",
           "pip install wheel",
           "pip install -r requirements.txt",
           "pip install streamlit", // use streamlit run UI app
